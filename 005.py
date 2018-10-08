@@ -32,4 +32,4 @@ class Solution:
         if end - start > self.longestSize and s[start] == s[end]:
             self.longestSize = end - start
             self.longestStart = start
-9o
+
