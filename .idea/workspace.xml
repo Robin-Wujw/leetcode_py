@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23febc04-9ac0-43b0-b310-594c41ebcf71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/014.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/015.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/017.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/018.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/005.py" beforeDir="false" afterPath="$PROJECT_DIR$/005.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/013.py" beforeDir="false" afterPath="$PROJECT_DIR$/013.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,33 +16,33 @@
     <session id="-527019780">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="8" />
+          <entry key="project.open.time.5" value="10" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="14" />
+          <entry key="py" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="14" />
+          <entry key="Python" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1763" />
+          <entry key="py" value="3485" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1763" />
+          <entry key="Python" value="3485" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -58,22 +55,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/015.py">
+        <entry file="file://$PROJECT_DIR$/016.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+            <state relative-caret-position="81">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
-                <marker date="1538884236782" expanded="true" signature="15:20" ph="..." />
+                <marker date="1539131965888" expanded="true" signature="35:40" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/017.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+              <folding>
+                <marker date="1539565144863" expanded="true" signature="54:59" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/001.py">
+        <entry file="file://$PROJECT_DIR$/018.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="95">
+              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding>
+                <marker date="1539654615023" expanded="true" signature="15:20" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,6 +110,9 @@
         <option value="$PROJECT_DIR$/013.py" />
         <option value="$PROJECT_DIR$/014.py" />
         <option value="$PROJECT_DIR$/015.py" />
+        <option value="$PROJECT_DIR$/016.py" />
+        <option value="$PROJECT_DIR$/017.py" />
+        <option value="$PROJECT_DIR$/018.py" />
       </list>
     </option>
   </component>
@@ -108,10 +123,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1768" />
-    <option name="y" value="377" />
-    <option name="width" value="1014" />
-    <option name="height" value="584" />
+    <option name="x" value="1366" />
+    <option name="y" value="34" />
+    <option name="width" value="960" />
+    <option name="height" value="1019" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -166,7 +181,7 @@
   <component name="ToolWindowManager">
     <frame x="1366" y="34" width="1920" height="1019" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49942195" visible="true" weight="0.2266881" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49942195" visible="true" weight="0.23954985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50057805" side_tool="true" weight="0.24973205" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -250,9 +265,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/015.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
+        <state relative-caret-position="716">
           <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
           <folding>
             <marker date="1538884236782" expanded="true" signature="15:20" ph="..." />
@@ -260,10 +282,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/001.py">
+    <entry file="file://$PROJECT_DIR$/016.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="81">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <marker date="1539131965888" expanded="true" signature="35:40" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/017.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <marker date="1539565144863" expanded="true" signature="54:59" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/018.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <marker date="1539654615023" expanded="true" signature="15:20" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
