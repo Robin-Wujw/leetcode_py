@@ -45,4 +45,4 @@ class Solution:
 if __name__ == "__main__":
     So = Solution()
     s = "rrasdsw"
-    So.lengthOfLongestSubstring1(s)
+    So.lengthOfLongestSubstring(s)
