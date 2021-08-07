@@ -52,6 +52,7 @@ class Solution:
             for letter in letters:
                 self.s = self.s + letter
                 backtrack(digits,index+1)
+                #index == len(digits) 往回溯一个字符
                 self.s = self.s[:-1]
         backtrack(digits,0)
         return res
