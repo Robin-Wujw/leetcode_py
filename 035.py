@@ -15,7 +15,7 @@ class Solution:
             if(nums[middle]<target):
                 left = middle + 1 
             if(nums[middle]>target):
-                right = right - 1
+                right = middle - 1
             if(nums[middle]== target):
                 return middle 
         return right + 1
