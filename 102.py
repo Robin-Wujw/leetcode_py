@@ -22,7 +22,7 @@ class Solution:
             in_list = []
             
             for _ in range(length):
-                node = quene.pop()
+                node = quene.pop(0)
                 in_list.append(node.val)
                 if node.left: quene.append(node.left)
                 if node.right: quene.append(node.right)
