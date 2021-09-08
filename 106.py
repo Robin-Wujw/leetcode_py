@@ -49,3 +49,28 @@ class Solution:
         root.right = self.buildTree(inorder_right, postorder_right)
 
         return root 
+def treeNodeToString(root):
+    if not root:
+        return "[]"
+    output = ""
+    queue = [root]
+    current = 0
+    while current != len(queue):
+        node = queue[current]
+        current = current + 1
+
+        if not node:
+            output += "null, "
+            continue
+
+        output += str(node.val) + ", "
+        queue.append(node.left)
+        queue.append(node.right)
+    return "[" + output[:-2] + "]"
+
+if __name__ ==  "__main__":
+    s = Solution()
+    inorder = [9,3,15,20,7]
+    postorder = [9,15,7,20,3]
+    root = s.buildTree(inorder,postorder)
+    print(treeNodeToString(root))
