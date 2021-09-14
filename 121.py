@@ -15,11 +15,11 @@ class Solution:
         if(len(prices)==0):
             return 0
         n = len(prices)
-        dp = [[0] * n for i in range(n)]
+        dp = [[0] * 2 for i in range(n)]
         # dp = [[0] * 2 for _ in range(n)]
         print(dp)
-        dp[0][0] = -prices[0]
-        dp[0][1] = 0
+        dp[0][0] = -prices[0]  # dp[i][0] 表示第i天持有股票所得最多现金
+        dp[0][1] = 0           # 表示第i天不持有股票所得最多现金
         for i in range(1,n):
             dp[i][0] = max(-prices[i],dp[i-1][0])
             dp[i][1] = max(dp[i-1][1],prices[i]+dp[i][0])
