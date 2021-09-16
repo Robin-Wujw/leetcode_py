@@ -23,10 +23,11 @@ class Solution:
         for i in range(1,n):
             dp[i][0] = max(-prices[i],dp[i-1][0])
             dp[i][1] = max(dp[i-1][1],prices[i]+dp[i][0])
+            print(dp[i][0],dp[i][1])
         return dp[-1][1]
         
 
 if __name__ ==  "__main__":
     s = Solution()
-    prices = [7]
+    prices = [7,1,5,3,6,4]
     print(s.maxProfit(prices))
