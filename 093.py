@@ -33,5 +33,5 @@ class Solution:
 
 if __name__ ==  "__main__":
     s = Solution()
-    a = "25525511135"
+    a = "025511135"
     print(s.restoreIpAddresses(a))
