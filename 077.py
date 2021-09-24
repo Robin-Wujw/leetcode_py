@@ -12,7 +12,7 @@ class Solution:
             if len(l) == k:
                 res.append(l[:])
                 return 
-            for i in range(startIndex,n+1):
+            for i in range(startIndex,n+1): # for i in range(startIndex,n-(k-len(path))+2):  #优化的地方-->剪枝
                 l.append(i)
                 backtrack(n,k,i+1)
                 l.pop()
