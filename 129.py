@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def sumNumbers(self, root: TreeNode) -> int:
+    def sumNumbers(self, root) -> int:
         """
         给你一个二叉树的根节点 root ，树中每个节点都存放有一个 0 到 9 之间的数字。
         每条从根节点到叶节点的路径都代表一个数字：
