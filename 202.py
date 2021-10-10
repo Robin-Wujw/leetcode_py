@@ -2,7 +2,6 @@ class Solution:
     def isHappy(self, n):
         def calculate_happy(num):
             sum_ = 0
-            
             # 从个位开始依次取，平方求和
             while num:
                 sum_ += (num % 10) ** 2
