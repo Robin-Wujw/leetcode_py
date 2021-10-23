@@ -19,7 +19,7 @@ class MyQueue:
         self.queue_in.append(x)    
 
     def pop(self) -> int:
-        if(self.empty):return None
+        if(self.empty()):return None
         for i in range(len(self.queue_in)-1):
             self.queue_out.appendleft(self.queue_in.pop())
         self.queue_in,self.queue_out = self.queue_out,self.queue_in
@@ -30,11 +30,3 @@ class MyQueue:
 
     def empty(self) -> bool:
         return len(self.queue_in) == 0
-
-
-# Your MyQueue object will be instantiated and called as such:
-# obj = MyQueue()
-# obj.push(x)
-# param_2 = obj.pop()
-# param_3 = obj.peek()
-# param_4 = obj.empty()
