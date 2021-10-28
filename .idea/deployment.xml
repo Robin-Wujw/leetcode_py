@@ -2,10 +2,24 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" serverName="hyf" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="gat">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/hyf/wjw/gat" local="$PROJECT_DIR$/../GAT" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="hyf">
         <serverdata>
           <mappings>
             <mapping deploy="/home/hyf/wjw/CLEVE" local="$PROJECT_DIR$/../CLEVE" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hyf@10.107.40.12:22 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
