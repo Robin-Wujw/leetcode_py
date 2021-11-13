@@ -12,16 +12,17 @@ class TreeNode:
         self.left = left
         self.right = right
 # class Solution:
-#     sum = 0
 #     def sumOfLeftLeaves(self, root: TreeNode) -> int:
-#         if (root == None): return 0
-#         if not root.left and not root.right:
-#             Solution.sum += root.val
-#         if root.left:
-#             self.sumOfLeftLeaves(root.left)
-#         if root.right and  root.right.left:
-#             self.sumOfLeftLeaves(root.right)
-#         return Solution.sum
+#         if not root:return 0
+#         self.res=0
+#         def sumleft(root):
+#             if not root:return
+#             if root.left and not root.left.left and not root.left.right:
+#                 self.res=self.res+root.left.val
+#             sumleft(root.left)
+#             sumleft(root.right)
+#         sumleft(root)
+#         return self.res
 class Solution:
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
         if not root: 
