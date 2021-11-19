@@ -6,6 +6,9 @@
 
 # @lc code=start
 # Definition for singly-linked list.
+from typing import List
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -13,15 +16,28 @@ class ListNode:
 class Solution:
     def removeElements(self, head: ListNode, val: int) -> ListNode:
         # if head == None: return head
+        # temp = head 
         # if head.val == val:
+        #     print('out1')
+        #问题出在这，如果head=head.next 前面的链就断了
         #     head = head.next
-        # temp = head
-        # while(head.next!=None):
-        #     if(head.next.val==val):
-        #         head.next = head.next.next
+        # cur = temp 
+        # while(temp.next!=None):
+        #     if(temp.next.val==val):
+        #         print('out')
+        #         temp.next = temp.next.next
         #     else:
-        #         head = head.next 
-        # return temp  
+        #         temp = temp.next 
+        # print(temp)
+        # return head  
+        # H = ListNode(next=head)
+        # temp = H 
+        # while(temp.next!=None):
+        #     if(temp.next.val==val):
+        #         temp.next = temp.next.next
+        #     else:
+        #         temp = temp.next 
+        # return H.next
         while head is not None and head.val==val: #保证链表第一个节点的值不等于val
             head=head.next
         if not head:         #判断链表是否为空
@@ -33,13 +49,5 @@ class Solution:
             else:
                 head=head.next
         return headNode
-        # H = ListNode(next=head)
-        # temp = H 
-        # while(temp.next!=None):
-        #     if(temp.next.val==val):
-        #         temp.next = temp.next.next
-        #     else:
-        #         temp = temp.next 
-        # return H.next
 # @lc code=end
 
