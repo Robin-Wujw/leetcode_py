@@ -10,12 +10,15 @@ class Solution:
         result1 = {}
         for i in s:
             if(i not in result1):
+                result1[i] = 1
+            else:
                 result1[i] += 1
         for i in t:
             if(i not in result1):
                 return False
             else:
                 result1[i] -= 1
-        for i in result1.values:
+        for i in result1.values():
             if(i!=0):
                 return False
+        return True
