@@ -13,6 +13,12 @@ class Solution:
             for j in range(len(ans) - 1, -1, -1):
                 ans.append(ans[j] | (1 << (i - 1)))
         return ans
+
+    #2 二进制数转格雷码
+        # ans = [0] * (1 << n)
+        # for i in range(1 << n):
+        #     ans[i] = (i >> 1) ^ i
+        # return ans
         
 # @lc code=end
 
