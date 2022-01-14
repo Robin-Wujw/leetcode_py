@@ -35,7 +35,7 @@ class Solution:
             if cnt < k:
                 left = mid + 1
             else:
-                right = mid
+                right = mid # 结束while循环
         pairSum = left
 
         ans = []
