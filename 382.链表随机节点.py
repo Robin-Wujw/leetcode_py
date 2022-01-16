@@ -15,6 +15,7 @@ class Solution:
         self.head = head
 
     def getRandom(self) -> int:
+        # 蓄水池问题
         node, i, ans = self.head, 1, 0
         while node:
             if randrange(i) == 0:  # 1/i 的概率选中（替换为答案）
