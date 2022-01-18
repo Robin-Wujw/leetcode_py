@@ -17,5 +17,15 @@ class Solution:
                     return True
             dict[nums[i]] = i 
         return False
+        # 滑动窗口
+        # s = set()
+        # for i, num in enumerate(nums):
+        #     if i > k:
+        #         s.remove(nums[i - k - 1])
+        #     if num in s:
+        #         return True
+        #     s.add(num)
+        # return False
+
 # @lc code=end
 
