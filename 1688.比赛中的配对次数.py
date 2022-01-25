@@ -8,8 +8,11 @@ class Solution:
     def numberOfMatches(self, n: int) -> int:
         if(n==1):
             return 0
-        half = int(n/2)
-        return half + self.numberOfMatches(int(n/2) + n%2)
-    
+        result = []
+        def backtrack(n):
+            if(n==2):
+                res
+
+
 # @lc code=end
 
