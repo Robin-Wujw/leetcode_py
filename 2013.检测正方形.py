@@ -24,6 +24,7 @@ class DetectSquares:
         if not y in self.map:
             return 0
         yCnt = self.map[y]
+        print(self.map)
 
         for col, colCnt in self.map.items():
             if col != y:
