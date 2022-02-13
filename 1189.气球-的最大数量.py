@@ -23,8 +23,6 @@ class Solution:
         #     elif(i=='l' or i=='o'):
         #         ret = min(ret,int(dict[i]/2))
         # return ret 
-class Solution:
-    def maxNumberOfBalloons(self, text: str) -> int:
         cnt = Counter(ch for ch in text if ch in "balon")
         cnt['l'] //= 2
         cnt['o'] //= 2
