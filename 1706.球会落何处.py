@@ -14,7 +14,7 @@ class Solution:
             for row in grid:
                 dir = row[col]
                 col += dir 
-                if(col < 0 or col > n or row[col]!=dir):
+                if(col < 0 or col >= n or row[col]!=dir):
                     break
             else: #这里是 for跟着的else  表示如果for没有被break 则执行这个
                 ans[j] = col 
