@@ -25,6 +25,6 @@ class Solution:
                         abs(candidate - selfNumber) < abs(ans - selfNumber) or \
                         abs(candidate - selfNumber) == abs(ans - selfNumber) and candidate < ans:
                     ans = candidate
-        return str(ans)
+        return str(ans)     
 # @lc code=end
 
