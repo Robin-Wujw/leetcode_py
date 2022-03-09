@@ -38,7 +38,7 @@ class MyLinkedList:
         else:
             self._count += 1
             node = self._head
-            next_n = Node(val)
+            next_n = Node(val) #建立新节点
             for i in range(index):
                 node = node.next
             next_n.next = node.next
