@@ -19,7 +19,7 @@ class Solution:
         for state in range(1<<n):
             val = 0
             for i in range(n):
-                if state&(1<<i):
+                if state&(1<<i): #判断第i位是0还是1,即是否是选了第i个元素的情况
                     val |= nums[i]
             ct[val] += 1
         return ct[max(ct)]
