@@ -6,7 +6,7 @@
 
 # @lc code=start
 class Node:
-    def __init__(self, key="", count=0):
+    def __init__(self, key="", count=0): #node会存储计数为count的 节点和，存储在keys中
         self.prev = None
         self.next = None
         self.keys = {key}
@@ -33,20 +33,20 @@ class AllOne:
     def inc(self, key: str) -> None:
         if key not in self.nodes:  # key 不在链表中
             if self.root.next is self.root or self.root.next.count > 1:
-                self.nodes[key] = self.root.insert(Node(key, 1)) #如果链表为空 或者下一个的count不为1  则从开头加进去
-            else: #链表不为空 或者 root的下一个count=1
+                self.nodes[key] = self.root.insert(Node(key, 1)) #如果链表为空 或者下一个node的count大于1  则从开头加进去
+            else: #链表不为空 或者 root的下一个count=1 则在root下一个node里加进key
                 self.root.next.keys.add(key)
                 self.nodes[key] = self.root.next
         else: # key在链表中
             cur = self.nodes[key]
             nxt = cur.next
-            if nxt is self.root or nxt.count > cur.count + 1:
+            if nxt is self.root or nxt.count > cur.count + 1: #下一个是结尾 或者下一个的count大于 count+1 则要添加一个count+1的node
                 self.nodes[key] = cur.insert(Node(key, cur.count + 1))
-            else:
+            else: #否则就在下一个node加上key 然后将原来的keys中去掉key
                 nxt.keys.add(key)
                 self.nodes[key] = nxt
             cur.keys.remove(key)
-            if len(cur.keys) == 0:
+            if len(cur.keys) == 0: #如果原来的keys里没key了就删去
                 cur.remove()
 
     def dec(self, key: str) -> None:
@@ -58,7 +58,7 @@ class AllOne:
             if pre is self.root or pre.count < cur.count - 1: 
                 self.nodes[key] = cur.prev.insert(Node(key, cur.count - 1))
                 #在pre后添加
-            else: # cur 前面有key 或 pre的count 比 cur.count-1 大  就要往前挪
+            else: # cur 前面有node 或 pre的node.count 等于 cur.count-1   就要往前添加
                 pre.keys.add(key)
                 self.nodes[key] = pre
         cur.keys.remove(key)
